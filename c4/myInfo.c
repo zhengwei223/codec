@@ -7,13 +7,15 @@
 
 #include<stdio.h>
 #include "simpio.h"
+
 int main(){
-    int age;
+    int year;
     float weight;
-    printf("请输入你的年龄：\n");
-    age = GetInteger();
+    printf("请输入你的出生年：\n");
+    year = GetInteger();
     printf("请输入你的体重：\n");
     weight = GetReal();
+    int age = 2015 - year;
     printf("你的年龄是%d,你的体重是%f\n",age,weight);
 }
 
